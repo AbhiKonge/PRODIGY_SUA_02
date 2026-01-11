@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Employee Management</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            background: #f5f7fb;
+        }
+
+        .left-panel {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        .login-box {
+            max-width: 420px;
+            margin: auto;
+        }
+
+        .btn-login {
+            background: #2c5364;
+            border: none;
+        }
+
+        .btn-login:hover {
+            background: #1e3c4f;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #2c5364;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row min-vh-100">
+
+        <!-- Left Content -->
+        <div class="col-lg-6 d-none d-lg-flex left-panel align-items-center justify-content-center">
+            <div class="text-center px-5">
+                <h1 class="fw-bold">Welcome Back</h1>
+                <p class="mt-3">
+                    Hello, Login to access your dashboard and manage your account securely.
+                </p>
+                
+             
+            </div>
+        </div>
+
+        <!-- Right Login Form -->
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <div class="login-box w-100 p-4">
+
+                <h3 class="text-center mb-4 fw-semibold">Login to Your Account</h3>
+
+                <form method="post" action="login.jsp">
+
+                    <div class="mb-3">
+                        <label class="form-label">Username</label>
+                        <input type="text" name="unm" class="form-control" placeholder="Enter Username" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" name="pw" class="form-control" placeholder="Enter password" required>
+                    </div>
+
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn btn-login text-white">
+                            Login
+                        </button>
+                    </div>
+
+                    <p class="text-center text-muted small">
+                        Secure Login • Authorized Users Only
+                    </p>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
